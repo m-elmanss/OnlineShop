@@ -25,7 +25,7 @@ public class PaymentServiceImpl implements PaymentService {
     }
 
     @Override
-    public List<PaymentDTO> getAllPayment(PaymentDTO paymentDTO) {
+    public List<PaymentDTO> getAllPayment() {
         return repository.findAll()
                 .stream()
                 .map(mapper::toDto)

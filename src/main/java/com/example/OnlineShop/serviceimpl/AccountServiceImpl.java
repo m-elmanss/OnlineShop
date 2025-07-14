@@ -12,10 +12,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
+
 public class AccountServiceImpl implements AccountService {
     private final AccountMapper mapper;
     private final AccountRepository repository;
+
+    public AccountServiceImpl(AccountMapper mapper,AccountRepository accountRepository){
+        this.mapper=mapper;
+        this.repository=accountRepository;
+    }
+
 
     @Override
     public AccountDTO createAccount(AccountDTO dto) {
