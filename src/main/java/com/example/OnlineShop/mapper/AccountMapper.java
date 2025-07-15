@@ -4,7 +4,8 @@ import com.example.OnlineShop.dto.AccountDTO;
 import com.example.OnlineShop.entity.Account;
 import org.mapstruct.Mapper;
 
-@Mapper
+
+@Mapper(componentModel = "spring")
 
 public interface AccountMapper {
     AccountDTO toDto(Account account);
