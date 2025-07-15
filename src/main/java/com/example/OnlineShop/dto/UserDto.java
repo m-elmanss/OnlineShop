@@ -1,5 +1,6 @@
 package com.example.OnlineShop.dto;
 
+
 import lombok.*;
 
 @Data
@@ -8,9 +9,9 @@ import lombok.*;
 @Builder
 @Getter
 @Setter
-public class CustomerDTO {
-    private String id;
-    private String address;
-    private String phone;
+public class UserDto {
+    private Integer id;
+    private String firstname;
+    private String lastname;
     private String email;
 }

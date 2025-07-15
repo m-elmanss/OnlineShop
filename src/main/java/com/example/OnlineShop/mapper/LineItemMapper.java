@@ -4,7 +4,7 @@ import com.example.OnlineShop.dto.LineItemDTO;
 import com.example.OnlineShop.entity.LineItem;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface LineItemMapper {
     LineItemDTO toDto(LineItem lineItem);
     LineItem toEntity(LineItemDTO lineItemDTO);
