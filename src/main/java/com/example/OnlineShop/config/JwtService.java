@@ -9,9 +9,9 @@ import java.security.Key;
 import java.util.function.Function;
 
 public class JwtService {
-    private static final String SECRET_KEY="https://www.amazon.com/s?i=fashion-novelty&rh=p_6%3AATVPDKIKX0DER&s=date-desc-rank&hidden-keywords=Lightweight%2C+Classic+fit%2C+Double-needle+sleeve+and+bottom+hem+-Longsleeve+-Raglan+-Vneck+-Tanktop&language=en_US";
+    private static final String SECRET_KEY="e8f3a9c1d5b2746f9e0a3c7b8d4f1e2a3c9b7d6e8f02a1c4b5d6f7e8a9c0b1d\n";
     public String extractUsername(String jwt) {
-        return null;
+        return extractClaim(jwt, Claims::getSubject);
     }
 
 
